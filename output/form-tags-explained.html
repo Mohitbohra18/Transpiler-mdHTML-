@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta charset='UTF-8'>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        background: #f9f9f9;
+        color: #333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #2c3e50;
+        margin-top: 1.2em;
+    }
+    code {
+        background-color: #eee;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+    pre {
+        background-color: #272822;
+        color: #f8f8f2;
+        padding: 1em;
+        border-radius: 6px;
+        overflow-x: auto;
+    }
+    blockquote {
+        border-left: 4px solid #ccc;
+        padding-left: 1em;
+        margin-left: 0;
+        color: #555;
+        font-style: italic;
+    }
+    ul, ol {
+        margin-left: 2em;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 2em 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1em 0;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 0.5em;
+        text-align: left;
+    }
+    a {
+        color: #3498db;
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<body>
+<h1>📝 All About Forms and Inputs!</h1>
+<p>Let's learn how websites ask questions and get answers using forms and inputs!</p>
+<hr>None</hr>
+<h2><code><form></code></h2>
+<p>This is like a <strong>magic envelope</strong> that holds all the questions (inputs) you want to ask!</p>
+<pre><code class='html'><form action="/submit" method="POST"> ... </form></code></pre>
+<hr>None</hr>
+<h2><code><input></code></h2>
+<p>This is a <strong>tiny box</strong> where you can type things like your name or age.</p>
+<pre><code class='html'><input type="text" placeholder="Your Name"></code></pre>
+<hr>None</hr>
+<h2><code><label></code></h2>
+<p>This is like a <strong>name tag</strong> for each input so you know what to write there.</p>
+<pre><code class='html'><label for="name">Your Name:</label></code></pre>
+<hr>None</hr>
+<h2><code><textarea></code></h2>
+<p>A <strong>big box</strong> for writing a long story, like a message or feedback.</p>
+<pre><code class='html'><textarea rows="4" cols="30">Write here...</textarea></code></pre>
+<hr>None</hr>
+<h2><code><select></code> and <code><option></code></h2>
+<p>This makes a <strong>drop-down list</strong>. Pick your favorite ice cream flavor!</p>
+<pre><code class='html'><select>
+  <option>Vanilla</option>
+  <option>Chocolate</option>
+</select></code></pre>
+<hr>None</hr>
+<h2><code><button></code></h2>
+<p>A <strong>big button</strong> to say “I’m done!” or “Go!”.</p>
+<pre><code class='html'><button type="submit">Send</button></code></pre>
+<hr>None</hr>
+<h2><code><fieldset></code> and <code><legend></code></h2>
+<p>These help <strong>group questions together</strong>. Like putting a frame and title on them!</p>
+<pre><code class='html'><fieldset>
+  <legend>Your Info</legend>
+  <input type="text">
+</fieldset></code></pre>
+<hr>None</hr>
+<h2><code><datalist></code></h2>
+<p>This gives <strong>smart suggestions</strong> as you type!</p>
+<pre><code class='html'><input list="browsers">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+</datalist></code></pre>
+<hr>None</hr>
+<h2><code><output></code></h2>
+<p>This shows the <strong>result of something</strong>, like 2 + 2 = 4!</p>
+<pre><code class='html'><output>4</output></code></pre>
+<hr>None</hr>
+<h2><code><progress></code></h2>
+<p>A <strong>loading bar</strong> that shows how much is done. Like “75% loaded”.</p>
+<pre><code class='html'><progress value="75" max="100"></progress></code></pre>
+<hr>None</hr>
+<h2><code><meter></code></h2>
+<p>This shows a <strong>level or score</strong>. Like a game score out of 10!</p>
+<pre><code class='html'><meter value="7" min="0" max="10">7</meter></code></pre>
+</body></html>

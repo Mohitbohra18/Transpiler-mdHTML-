@@ -1,0 +1,111 @@
+<html>
+<head>
+<meta charset='UTF-8'>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        background: #f9f9f9;
+        color: #333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #2c3e50;
+        margin-top: 1.2em;
+    }
+    code {
+        background-color: #eee;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+    pre {
+        background-color: #272822;
+        color: #f8f8f2;
+        padding: 1em;
+        border-radius: 6px;
+        overflow-x: auto;
+    }
+    blockquote {
+        border-left: 4px solid #ccc;
+        padding-left: 1em;
+        margin-left: 0;
+        color: #555;
+        font-style: italic;
+    }
+    ul, ol {
+        margin-left: 2em;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 2em 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1em 0;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 0.5em;
+        text-align: left;
+    }
+    a {
+        color: #3498db;
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<body>
+<h1>Permutation and Combination Formulas</h1>
+<h2>1. Permutations with Constraints</h2>
+<ul>
+<li><strong>Linear</strong>: \( n! \)</li>
+<li><strong>With repetitions</strong>: \( \frac{n!}{k<em>1! \times k</em>2! \times \cdots} \)</li>
+<li><strong>Circular</strong>: \( (n-1)! \)</li>
+<li><strong>Circular with reflection</strong>: \( \frac{(n-1)!}{2} \)</li>
+<li><strong>Grouping</strong>: Treat group as unit, multiply by internal arrangements.</li>
+<li><strong>Not together</strong>: Total - together.</li>
+<li><strong>Example</strong>: Arrange 3 boys, 2 girls (girls together): \( 4! \times 2! = 48 \).</li>
+<h2>2. Combinations with Constraints</h2>
+<li><strong>Basic</strong>: \( \binom{n}{r} = \frac{n!}{r!(n-r)!} \)</li>
+<li><strong>At least one</strong>: Total - none.</li>
+<li><strong>Exactly one</strong>: \( \binom{n}{1} \times \binom{m}{r-1} \).</li>
+<li><strong>Example</strong>: 2 numbers, at least one prime: \( \binom{10}{2} - \binom{6}{2} = 30 \).</li>
+<h2>3. Counting Paths or Sequences</h2>
+<li><strong>Independent choices</strong>: \( a \times b \times \cdots \)</li>
+<li><strong>Grid paths</strong>: \( \binom{n+k}{n} \)</li>
+<li><strong>At least one</strong>: \( 2^n - 1 \)</li>
+<li><strong>Generating functions</strong>: Coefficient of \( x^k \).</li>
+<li><strong>Example</strong>: Paths to (5, 6): \( \binom{11}{5} = 462 \).</li>
+<h2>4. Number Formation</h2>
+<li><strong>With repetition</strong>: \( a \times b \times \cdots \)</li>
+<li><strong>No repetition</strong>: \( P(n,r) = \frac{n!}{(n-r)!} \)</li>
+<li><strong>No leading zero</strong>: Adjust first digit.</li>
+<li><strong>Example</strong>: 3-digit even numbers: Casework yields 36.</li>
+<h2>5. Assignment Problems</h2>
+<li><strong>Distinct</strong>: \( n! \)</li>
+<li><strong>Multiple</strong>: \( n^m \)</li>
+<li><strong>Restrictions</strong>: Total - invalid.</li>
+<li><strong>Example</strong>: 4 tasks, 1st person not 1st task: \( 4! - 3! = 18 \).</li>
+<h2>6. Geometric Counting</h2>
+<li><strong>Lines</strong>: \( \binom{n}{2} \)</li>
+<li><strong>Rectangles</strong>: \( \binom{r+1}{2} \times \binom{c+1}{2} \)</li>
+<li><strong>Squares</strong>: \( \sum (r+1-k)(c+1-k) \)</li>
+<li><strong>Example</strong>: 8×8 rectangles: \( \binom{9}{2}^2 = 1296 \).</li>
+<h2>7. Handshake or Pairing</h2>
+<li><strong>Handshakes</strong>: \( \binom{n}{2} \)</li>
+<li><strong>Example</strong>: 55 handshakes: \( \binom{11}{2} = 55 \).</li>
+<h2>8. Miscellaneous Counting</h2>
+<li><strong>Factors</strong>: \( (e<em>1+1)(e</em>2+1) \cdots \)</li>
+<li><strong>Perfect squares</strong>: Product of \( \lfloor e_i/2 \rfloor + 1 \).</li>
+<li><strong>Digit counts</strong>: Positional analysis.</li>
+<li><strong>Example</strong>: Perfect squares of \( 2^5 \times 3^6 \times 5^2 \): \( 3 \times 4 \times 2 = 24 \).</li>
+</ul>
+</body></html>

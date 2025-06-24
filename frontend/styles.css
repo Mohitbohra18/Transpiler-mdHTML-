@@ -1,0 +1,260 @@
+body {
+    background: linear-gradient(135deg, #3D315B 0%, #444B6E 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #06141B 0%, #11212D 100%) !important;
+}
+
+.dark-mode {
+    background-color: #06141B !important;
+    color: #CCD0CF !important;
+}
+.dark-mode input, .dark-mode textarea, .dark-mode select {
+    background-color: #11212D !important;
+    color: #CCD0CF !important;
+    border-color: #4A5C6A !important;
+}
+.dark-mode button, #darkModeToggle.dark-mode-btn {
+    background-color: #4A5C6A !important;
+    color: #CCD0CF !important;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s;
+}
+.dark-mode button:hover, #darkModeToggle.dark-mode-btn:hover {
+    background-color: #9BA8AB !important;
+    color: #06141B !important;
+}
+#darkModeToggle {
+    position: fixed;
+    top: 24px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #FAFAFA;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin: 0;
+}
+#darkModeToggle:hover {
+    background-color: #171717;
+    color: #FAFAFA;
+    box-shadow: 0 0 8px 2px rgba(255,255,255,0.15);
+}
+#darkModeToggle.dark-mode-btn {
+    background-color: #4A5C6A !important;
+    color: #CCD0CF !important;
+    box-shadow: 0 0 8px 2px rgba(204, 208, 207, 0.15);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #444B6E;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(61, 49, 91, 0.15);
+    padding: 32px 24px;
+    color: #F8F991;
+    transition: background 0.3s, color 0.3s;
+}
+
+.upload-box {
+    background: #708B75;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(61, 49, 91, 0.10);
+    max-width: 700px;
+    margin: auto;
+    border: 2px solid #9AB87A;
+    transition: all 0.3s cubic-bezier(.4,2,.6,1);
+    color: #F8F991;
+}
+
+.upload-box.dragover {
+    background-color: #9AB87A;
+    border: 2px dashed #F8F991;
+}
+
+.upload-box.highlight {
+    border-color: #F8F991;
+    background-color: rgba(248, 249, 145, 0.15);
+}
+
+.upload-box input[type="file"] {
+    display: none;
+}
+
+.upload-box .icons i.bi-cloud-upload {
+    color: #F8F991;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.upload-box .icons i.bi-dropbox {
+    color: #3D315B;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background: #3D315B;
+    border-top: 1px solid #444B6E;
+    color: #F8F991;
+    font-size: 1rem;
+}
+
+.drop-zone-label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    border: 2px dashed #9AB87A;
+    border-radius: 10px;
+    background-color: #F8F991;
+    color: #3D315B;
+    transition: background-color 0.3s ease, color 0.3s;
+}
+
+.drop-zone-label:hover {
+    background-color: #9AB87A;
+    color: #3D315B;
+}
+
+#file-label-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #3D315B;
+}
+
+.btn-primary {
+    background-color: #9AB87A;
+    border-color: #708B75;
+    color: #3D315B;
+    padding: 10px 28px;
+    font-size: 1.1rem;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(61,49,91,0.10);
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #F8F991;
+    border-color: #9AB87A;
+    color: #3D315B;
+    box-shadow: 0 4px 16px rgba(61,49,91,0.15);
+}
+
+.btn-primary:disabled {
+    background-color: #708B75;
+    border-color: #708B75;
+    color: #F8F991;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+#file-name {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #F8F991;
+}
+
+.dark-mode .container {
+    background: #11212D !important;
+    color: #CCD0CF !important;
+}
+
+.dark-mode .upload-box {
+    background-color: #253745 !important;
+    border-color: #4A5C6A !important;
+    box-shadow: 0 0 16px 4px rgba(204, 208, 207, 0.1), 0 10px 25px rgba(0,0,0,0.5) !important;
+}
+.dark-mode .upload-box.dragover {
+    background-color: #4A5C6A !important;
+    border-color: #9BA8AB !important;
+}
+.dark-mode .upload-box.highlight {
+    border-color: #9BA8AB !important;
+    background-color: rgba(155, 168, 171, 0.15) !important;
+}
+.dark-mode .upload-box .icons i {
+    color: #CCD0CF !important;
+}
+.dark-mode footer {
+    background-color: #06141B !important;
+    color: #9BA8AB !important;
+    border-top: 1px solid #11212D;
+}
+.dark-mode .drop-zone-label {
+    background-color: #11212D !important;
+    border-color: #4A5C6A !important;
+    color: #CCD0CF !important;
+}
+.dark-mode .drop-zone-label:hover {
+    background-color: #253745 !important;
+}
+.dark-mode #file-label-text {
+    color: #CCD0CF !important;
+}
+.dark-mode .btn-primary {
+    background-color: #4A5C6A !important;
+    border-color: #253745 !important;
+    color: #CCD0CF !important;
+}
+.dark-mode .btn-primary:hover {
+    background-color: #9BA8AB !important;
+    border-color: #4A5C6A !important;
+    color: #06141B !important;
+}
+.dark-mode .btn-primary:disabled {
+    background-color: #253745 !important;
+    border-color: #253745 !important;
+    color: #9BA8AB !important;
+    cursor: not-allowed;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: #CCD0CF !important;
+}
+.dark-mode p, .dark-mode span, .dark-mode label, .dark-mode strong {
+    color: #CCD0CF !important;
+}
+.dark-mode .text-muted, .dark-mode .text-secondary {
+    color: #9BA8AB !important;
+}
+.dark-mode .text-danger, .dark-mode .fw-semibold {
+    color: #FF6B6B !important; /* Keeping a highlight color for danger text */
+}
+.dark-mode .icons i {
+    color: #CCD0CF !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #F8F991;
+    font-weight: 800;
+}
+
+.text-muted, .text-secondary {
+    color: #F8F991 !important;
+}
