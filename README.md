@@ -48,7 +48,7 @@ Features both a **command-line interface** and a **web-based converter** with a 
    ```bash
    git clone https://github.com/Mohitbohra18/Transpiler-mdHTML-.git
    cd Transpiler-mdHTML-
-`````
+   ```
 
 2. **Install dependencies**
 
@@ -265,4 +265,5 @@ Licensed under the [MIT License](LICENSE).
 * 💬 [Start a Discussion](https://github.com/Mohitbohra18/Transpiler-mdHTML-/discussions)
 
 ---
+
 
